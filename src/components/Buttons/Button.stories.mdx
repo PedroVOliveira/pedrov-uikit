@@ -1,15 +1,120 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 
+import { Box } from '@material-ui/core'
+
 import { Button } from '.'
+
+import { ThemeProvider, useTheme } from '@material-ui/core'
 
 <Meta title="Button" component={Button} />
 
-# Button
+# Buttons
 
 Teste
 
-<Story name="Primary">
-  <Button />
+## Contained
+
+<Story name="Contained">
+  <Box
+    component="div"
+    display="grid"
+    gridGap="10px"
+    gridTemplateColumns="1fr 1fr 1fr"
+  >
+    <Button variant="contained" color="primary">
+      Button contained
+    </Button>
+    <Button variant="contained" color="secondary">
+      Button secondary
+    </Button>
+    <Button variant="contained" color="default">
+      Button secondary
+    </Button>
+  </Box>
+</Story>
+
+## Outlined
+
+<Story name="Outlined">
+  <Box
+    component="div"
+    display="grid"
+    gridGap="10px"
+    gridTemplateColumns="1fr 1fr 1fr"
+  >
+    <Button variant="outlined" color="primary">
+      outlined primary
+    </Button>
+    <Button variant="outlined" color="secondary">
+      outlined secondary
+    </Button>
+    <Button variant="outlined" color="default">
+      outlined default
+    </Button>
+  </Box>
+</Story>
+
+## Text
+
+<Story name="Text">
+  <Box
+    component="div"
+    display="grid"
+    gridGap="10px"
+    gridTemplateColumns="1fr 1fr 1fr"
+  >
+    <Button variant="text" color="primary">
+      text primary
+    </Button>
+    <Button variant="text" color="secondary">
+      text secondary
+    </Button>
+    <Button variant="text" color="default">
+      text default
+    </Button>
+  </Box>
+</Story>
+
+## Disabled
+
+<Story name="Disabled">
+  <Box
+    component="div"
+    display="grid"
+    gridGap="10px"
+    gridTemplateColumns="1fr 1fr 1fr"
+  >
+    <Button variant="contained" disabled>
+      Disabled
+    </Button>
+    <Button variant="outlined" disabled>
+      Disabled
+    </Button>
+    <Button variant="text" disabled>
+      Disabled
+    </Button>
+  </Box>
+</Story>
+
+## Loading
+
+<Story name="Loading">
+  <Box
+    component="div"
+    display="grid"
+    gridGap="10px"
+    gridTemplateColumns="1fr 1fr 1fr"
+  >
+    <Button variant="contained" loading>
+      Contained loading
+    </Button>
+    <Button variant="outlined" loading>
+      outlined loading
+    </Button>
+    <Button variant="text" loading>
+      textLoading
+    </Button>
+  </Box>
 </Story>
 
 # Props
