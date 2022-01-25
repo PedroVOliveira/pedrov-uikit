@@ -1,6 +1,6 @@
 import React from 'react'
 
-export type propsTypes = {
+export type IButton = {
   onClick?: () => void
   variant?: 'text' | 'outlined' | 'contained' | undefined
   color?: 'inherit' | 'primary' | 'secondary' | 'default'
