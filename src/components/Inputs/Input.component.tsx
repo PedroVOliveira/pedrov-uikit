@@ -18,8 +18,6 @@ export const Input: React.FC<ITextField> = ({
   errorMessage,
   style
 }) => {
-  console.log('theme', theme)
-
   const messageStyles: React.CSSProperties = {
     color: theme.palette.error.main
   }
