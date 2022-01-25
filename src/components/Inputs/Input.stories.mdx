@@ -1,4 +1,4 @@
-import { Meta, Story, Props } from '@storybook/addon-docs'
+import { Canvas, Meta, Story, Props } from '@storybook/addon-docs'
 
 import { Box } from '@material-ui/core'
 
@@ -10,13 +10,44 @@ import { ThemeProvider, useTheme } from '@material-ui/core'
 
 # Inputs
 
-Teste
+Input Component
 
-## Input
+# Outlined
 
-<Story name="Contained">
-  <Input />
-</Story>
+<Canvas>
+  <Story name="Outlined">
+    <Input label="Name" variant="outlined" />
+  </Story>
+</Canvas>
+
+# Filled
+
+<Canvas>
+  <Story name="Filled">
+    <Input label="Name" variant="filled" />
+  </Story>
+</Canvas>
+
+# Standard
+
+<Canvas>
+  <Story name="Standard">
+    <Input label="Name" variant="standard" />
+  </Story>
+</Canvas>
+
+# Error
+
+<Canvas>
+  <Story name="Error">
+    <Input
+      label="Name"
+      variant="outlined"
+      error
+      errorMessage="Campo Invalido"
+    />
+  </Story>
+</Canvas>
 
 # Props
 
