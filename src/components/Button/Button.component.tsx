@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Button as ButtonMaterial, CircularProgress } from '@material-ui/core/'
 
-import { propsTypes } from './Button.types'
+import { IButton } from './Button.types'
 
-export const Button: React.FC<propsTypes> = ({
+export const Button: React.FC<IButton> = ({
   children,
   variant = 'contained',
   disabled,
