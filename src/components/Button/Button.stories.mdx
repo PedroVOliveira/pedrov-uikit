@@ -1,4 +1,4 @@
-import { Meta, Story, Props } from '@storybook/addon-docs'
+import { Canvas, Meta, Story, Props } from '@storybook/addon-docs'
 
 import { Box } from '@material-ui/core'
 
@@ -14,108 +14,118 @@ Teste
 
 ## Contained
 
-<Story name="Contained">
-  <Box
-    component="div"
-    display="grid"
-    gridGap="10px"
-    gridTemplateColumns="1fr 1fr 1fr"
-  >
-    <Button variant="contained" color="primary">
-      Button contained
-    </Button>
-    <Button variant="contained" color="secondary">
-      Button secondary
-    </Button>
-    <Button variant="contained" color="default">
-      Button secondary
-    </Button>
-  </Box>
-</Story>
+<Canvas>
+  <Story name="Contained">
+    <Box
+      component="div"
+      display="grid"
+      gridGap="10px"
+      gridTemplateColumns="1fr 1fr 1fr"
+    >
+      <Button variant="contained" color="primary">
+        Button contained
+      </Button>
+      <Button variant="contained" color="secondary">
+        Button secondary
+      </Button>
+      <Button variant="contained" color="default">
+        Button secondary
+      </Button>
+    </Box>
+  </Story>
+</Canvas>
 
 ## Outlined
 
-<Story name="Outlined">
-  <Box
-    component="div"
-    display="grid"
-    gridGap="10px"
-    gridTemplateColumns="1fr 1fr 1fr"
-  >
-    <Button variant="outlined" color="primary">
-      outlined primary
-    </Button>
-    <Button variant="outlined" color="secondary">
-      outlined secondary
-    </Button>
-    <Button variant="outlined" color="default">
-      outlined default
-    </Button>
-  </Box>
-</Story>
+<Canvas>
+  <Story name="Outlined">
+    <Box
+      component="div"
+      display="grid"
+      gridGap="10px"
+      gridTemplateColumns="1fr 1fr 1fr"
+    >
+      <Button variant="outlined" color="primary">
+        outlined primary
+      </Button>
+      <Button variant="outlined" color="secondary">
+        outlined secondary
+      </Button>
+      <Button variant="outlined" color="default">
+        outlined default
+      </Button>
+    </Box>
+  </Story>
+</Canvas>
 
 ## Text
 
-<Story name="Text">
-  <Box
-    component="div"
-    display="grid"
-    gridGap="10px"
-    gridTemplateColumns="1fr 1fr 1fr"
-  >
-    <Button variant="text" color="primary">
-      text primary
-    </Button>
-    <Button variant="text" color="secondary">
-      text secondary
-    </Button>
-    <Button variant="text" color="default">
-      text default
-    </Button>
-  </Box>
-</Story>
+<Canvas>
+  <Story name="Text">
+    <Box
+      component="div"
+      display="grid"
+      gridGap="10px"
+      gridTemplateColumns="1fr 1fr 1fr"
+    >
+      <Button variant="text" color="primary">
+        text primary
+      </Button>
+      <Button variant="text" color="secondary">
+        text secondary
+      </Button>
+      <Button variant="text" color="default">
+        text default
+      </Button>
+    </Box>
+  </Story>
+</Canvas>
 
 ## Disabled
 
-<Story name="Disabled">
-  <Box
-    component="div"
-    display="grid"
-    gridGap="10px"
-    gridTemplateColumns="1fr 1fr 1fr"
-  >
-    <Button variant="contained" disabled>
-      Disabled
-    </Button>
-    <Button variant="outlined" disabled>
-      Disabled
-    </Button>
-    <Button variant="text" disabled>
-      Disabled
-    </Button>
-  </Box>
-</Story>
+<Canvas>
+  <Story name="Disabled">
+    <Box
+      component="div"
+      display="grid"
+      gridGap="10px"
+      gridTemplateColumns="1fr 1fr 1fr"
+    >
+      <Button variant="contained" disabled>
+        Disabled
+      </Button>
+      <Button variant="outlined" disabled>
+        Disabled
+      </Button>
+      <Button variant="text" disabled>
+        Disabled
+      </Button>
+    </Box>
+  </Story>
+</Canvas>
 
 ## Loading
 
-<Story name="Loading">
-  <Box
-    component="div"
-    display="grid"
-    gridGap="10px"
-    gridTemplateColumns="1fr 1fr 1fr"
-  >
-    <Button variant="contained" loading>
-      Contained loading
-    </Button>
-    <Button variant="outlined" loading>
-      outlined loading
-    </Button>
-    <Button variant="text" loading>
-      textLoading
-    </Button>
-  </Box>
-</Story>
+<Canvas>
+  <Story name="Loading">
+    <Box
+      component="div"
+      display="grid"
+      gridGap="10px"
+      gridTemplateColumns="1fr 1fr 1fr"
+    >
+      <Button variant="contained" loading>
+        Contained loading
+      </Button>
+      <Button variant="outlined" loading>
+        outlined loading
+      </Button>
+      <Button variant="text" loading>
+        textLoading
+      </Button>
+    </Box>
+  </Story>
+</Canvas>
 
 # Props
 
