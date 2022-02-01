@@ -13,7 +13,7 @@ export const Select = ({ label, options, value, setValue }) => {
     <>
       <Box sx={{ minWidth: 120 }}>
         <FormControl fullWidth>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          <InputLabel id="demo-simple-select-label">{label}</InputLabel>
           <SelectMaterial label="Age">
             <MenuItem value={10}>Ten</MenuItem>
             <MenuItem value={20}>Twenty</MenuItem>
