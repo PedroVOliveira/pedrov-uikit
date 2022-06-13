@@ -18,10 +18,6 @@ export const Input: React.FC<ITextField> = ({
   errorMessage,
   style
 }) => {
-  const messageStyles: React.CSSProperties = {
-    color: theme.palette.error.main
-  }
-
   return (
     <>
       <TextField
@@ -37,7 +33,7 @@ export const Input: React.FC<ITextField> = ({
         style={{ ...style }}
       />
       {error && (
-        <Box pt={1} style={messageStyles}>
+        <Box pt={1} color={theme.palette.error.main}>
           {errorMessage}
         </Box>
       )}

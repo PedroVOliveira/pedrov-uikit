@@ -1,1 +1,1 @@
-export { default } from './Select.component'
+export * from './Select.component'
